@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+
+.header {
+    /*width: 100%; /*ancho*/
+    height: 100vh; /*alto  px (pixeles - no responsive) vh(para responsive) %(responsive)*/
+    background: #40a312;  /* fallback for old browsers */
+    background: linear-gradient(to right,#40a312 ,#42a542 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #42a542, #40a312);  /* Chrome 10-25, Safari 5.1-6 */
+}
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(30, 33, 37);
+}
+.div-logo {
+    width: 25%;
+    padding: 20px;
+}
+.logo-nav {
+    width: 100%;
+    /*padding-right: 10px;
+    /*object-fit: none; /*permite que la imagen no se desfigure */
+} 
+
+.ul-nav {
+    width: 75%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.ul-nav li a {
+    text-decoration:none;
+    color: white;
+    font-weight: 800; 
+    font-size: 115%;
+    padding: 8px 20px ;
+    display: block;
+}
+.ul-nav > li {
+    float:left
+}
+.ul-nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+}
+
+.ul-nav li a:hover {
+    color: black;
+    /*border-bottom: 4px solid black;*/
+    transition: 0.2s;
+    text-decoration: underline 3px black;
+    /*background-color: rgb(122, 197, 122);
+    border-radius: 20px;*/
+}
+.ul-nav li:hover > ul {
+    display: block ;
+    background-color: rgb(3, 114, 3)
+}
+.ul-nav li:hover {
+    background-color: rgb(3, 114, 3)
+}
+
+.ul-nav li ul li {
+    position: relative;
+}
+.ul-nav li ul li ul {
+    right: -318px;
+    top: 0px;
+}
+.portada {
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7%;
+}
+
+.h1-portada{
+    margin-bottom: 25px;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 5px 5px 3px black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.div-img-portada {
+    display: flex;
+    justify-content: center;
+    /*width: 80%;*/
+
+}
+.img-portada {
+    width: 60%;
+    -webkit-box-shadow: 24px 19px 13px 7px rgba(0,0,0,0.8);
+    -moz-box-shadow: 24px 19px 13px 7px rgba(0,0,0,0.8);
+    box-shadow: 24px 19px 13px 7px rgba(0,0,0,0.8);
+}
+
+.section-contact {
+    height: 100vh; /*alto  px (pixeles - no responsive) vh(para responsive) %(responsive)*/
+    background: #40a312;  /* fallback for old browsers */
+    background: linear-gradient(to right,#40a312 ,#40a312 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #40a312, #40a312);  /* Chrome 10-25, Safari 5.1-6 */
+}
+.conteiner-contact {
+    padding-top: 7%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.line-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact {
+    width: 20%;
+    height: 20vh;
+    color: black;
+    background-color: white;
+    text-shadow: 2px 2px 2px #173f05;
+    margin-top: 50px;
+    -webkit-box-shadow: 0px 0px 13px 7px rgba(0,0,0,0.73);
+    -moz-box-shadow: 0px 0px 13px 7px rgba(0,0,0,0.73);
+    box-shadow: 0px 0px 13px 7px rgba(0,0,0,0.73);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-titulo {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding:3%;
+}
+
+.footer {
+    background-color: rgb(30, 33, 37);
+}
+
+.footer-domicilios {
+    display: flex;
+    justify-content:center;
+}
+
+.domicilio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 28%;
+    background-color:rgb(67, 161, 64);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-app {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+
+}
+ .info {
+     width: 25%;
+     color: rgb(179, 179, 179);
+     font-size: 1.2rem;
+ }
+ 

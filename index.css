@@ -9,9 +9,15 @@ ul, ol {
 .header {
     /*width: 100%; /*ancho*/
     height: 100vh; /*alto  px (pixeles - no responsive) vh(para responsive) %(responsive)*/
-    background: #40a312;  /* fallback for old browsers */
-    background: linear-gradient(to right,#40a312 ,#42a542 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: -webkit-linear-gradient(to right, #42a542, #40a312);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: #40a312;  fallback for old browsers */
+    /* background: linear-gradient(to right,#40a312 ,#42a542 ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: -webkit-linear-gradient(to right, #42a542, #40a312);   */ 
+
+
+     background: #56ab2f;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #a8e063, #56ab2f); /*  Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #a8e063, #56ab2f);  /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+
 }
 .navbar {
     width: 100%;
@@ -97,10 +103,12 @@ ul, ol {
     display: flex;
     justify-content: center;
     /*width: 80%;*/
-
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
 }
 .img-portada {
-    width: 60%;
+    width: 50%;
     -webkit-box-shadow: 24px 19px 13px 7px rgba(0,0,0,0.8);
     -moz-box-shadow: 24px 19px 13px 7px rgba(0,0,0,0.8);
     box-shadow: 24px 19px 13px 7px rgba(0,0,0,0.8);
@@ -182,4 +190,117 @@ ul, ol {
      color: rgb(179, 179, 179);
      font-size: 1.2rem;
  }
+ .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.14s;
+    cursor: pointer;
+    width: 150px;
+}
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .button2{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #fa481b;
+  }
+
+  .button2:hover {
+    background-color: #fa481b;
+    color: white;
+  }
+  .margin{
+      margin-top: 40px;
+
+  }
  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  input[type=arats]:hover {
+    background-color: #fa481b;
+  }
+  
+  input[type=atras] {
+    width: 100%;
+    background-color: #fa481b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }  
+  
+  .div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+ .reg{     
+  /* margin: 3%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+  .registro{
+      width: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+  .img-registro {
+      width: 25%;
+      margin-bottom: 15px;      
+  }
+  .botones{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+ } 
+  .reg1{
+      margin: 50px;
+  }
+  .input {
+      max-width: 300px;
+  }

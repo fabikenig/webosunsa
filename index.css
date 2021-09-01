@@ -85,6 +85,7 @@ background-color: white;
     top: 0px;
 }
 .portada {
+    background-color: teal;
     display: flex;
     height: 75vh;
     flex-direction: column;

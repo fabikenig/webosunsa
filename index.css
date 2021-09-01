@@ -90,6 +90,7 @@ background-color: white;
     flex-direction: column;
     align-items: center;
     padding-top: 7%;
+   
 }
 
 .h1-portada{
@@ -281,13 +282,14 @@ background-color: white;
     width: 100%;
     display: flex;
     justify-content: center;
+ 
     }
   .registro{
       width: 50%;
      display: flex;
      flex-direction: column;
      align-items: center;
-     margin: 20px;
+     margin: 10px;
   }
   .img-registro {
       width: 25%;
@@ -310,4 +312,8 @@ background-color: white;
 
       display: flex;
 
+  }
+  .imagenregistro{
+    width: 50%;
+ 
   }

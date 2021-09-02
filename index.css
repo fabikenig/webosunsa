@@ -26,6 +26,7 @@ ul, ol {
     align-items: center;
     position: fixed;
     background-color: rgb(30, 33, 37);
+    
 }
 .div-logo {
     width: 25%;
@@ -100,6 +101,7 @@ ul, ol {
     color: black;
     text-shadow: 5px 5px 3px rgb(90, 90, 90);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 .div-img-portada {
     display: flex;
@@ -134,6 +136,7 @@ ul, ol {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .contact {
@@ -151,12 +154,15 @@ ul, ol {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-width: 320px;
+    flex-wrap: wrap;
 }
 
 .contact-titulo {
     text-transform: uppercase;
     font-size: 1.3rem;
     padding:3%;
+    text-align: center;
 }
 
 .footer {
@@ -166,6 +172,7 @@ ul, ol {
 .footer-domicilios {
     display: flex;
     justify-content:center;
+    flex-wrap: wrap;
 }
 
 .domicilio {
@@ -396,3 +403,29 @@ ul.slider li:target {
     border-radius: 100%;
 }
 /* SLIDER */
+
+
+/*********** MEDIA QUERIS ***********/
+
+@media (min-width: 640px) and (max-width: 1280px){
+    .section-contact {
+        height: 170vh;
+    }
+}
+@media (max-width: 639px) {
+    .section-contact {
+        height: 320vh;
+    }
+}
+@media (max-width: 1000px) {
+    .portada {
+        padding-top: 15%;
+    }
+    
+}
+@media (min-width: 1450px) and (max-width: 1618px) {
+    .header {
+        height: 110vh;
+    }    
+}
+    

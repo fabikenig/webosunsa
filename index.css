@@ -26,24 +26,33 @@ ul, ol {
     align-items: center;
     position: fixed;
     background-color: rgb(30, 33, 37);
-    
 }
 .div-logo {
-    width: 25%;
-    padding: 20px;
+    width: 8%;
+    margin-left: 25px;
+    /* padding: 20px; */
 }
 .logo-nav {
     width: 100%;
+    min-width: 75px;
     /*padding-right: 10px;
     /*object-fit: none; /*permite que la imagen no se desfigure */
-} 
-
+}
 .ul-nav {
     width: 75%;
     height: 100%;
     list-style: none;
     display: flex;
     align-items: center;
+}
+.nav-menu {
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-login {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
 }
 .ul-nav li a {
     text-decoration:none;
@@ -236,12 +245,14 @@ ul, ol {
 }
 .margin{
       margin-top: 40px;
+      text-align: center;
 
 }
  
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
+    min-width: 200px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -258,6 +269,9 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+.label-login {
+    text-align: center;
 }
 
 input[type=submit]:hover {
@@ -309,6 +323,9 @@ input[type=atras] {
      align-items: center;
      margin: 10px;
 }
+.h3-registro {
+    text-align: center;
+}
 .img-registro {
       width: 25%;
       margin-bottom: 15px;      
@@ -335,14 +352,14 @@ input[type=atras] {
 .pag {
     padding-top: 15%;
 }
-.container{
+.container {
     margin: auto;
     background-color: white;
-    width: 800px;
+    width: 1000px;
     box-shadow: 0px 0px 18px 16px rgba(0,0,0,0.7);
     -webkit-box-shadow: 0px 0px 18px 16px rgba(0,0,0,0.7);
     -moz-box-shadow: 0px 0px 18px 16px rgba(0,0,0,0.7);
-  }
+}
 ul, li {
     padding: 0;
     margin: 0;
@@ -351,8 +368,8 @@ ul, li {
   
 ul.slider{
     position: relative;
-    width: 800px;
-    height: 300px;
+    width: 1000px;
+    height: 450px;
 }
   
 ul.slider li {
@@ -368,7 +385,7 @@ ul.slider li {
   
 ul.slider li img{
     width: 100%;
-    height: 300px;
+    height: 450px;
     object-fit: cover;
 }
   
@@ -409,23 +426,115 @@ ul.slider li:target {
 
 @media (min-width: 640px) and (max-width: 1280px){
     .section-contact {
-        height: 170vh;
+        height: 160vh;
     }
 }
 @media (max-width: 639px) {
     .section-contact {
-        height: 320vh;
+        height: 300vh;
     }
 }
-@media (max-width: 1000px) {
+@media (min-width: 1100px) and (max-width: 1450px) {
+    .portada {
+        padding-top: 10%;
+    }  
+    .h1-portada {
+        font-size: 3.5rem;
+    }  
+    .portada-registro {
+        padding: 10%;
+    }    
+    .div-reg {
+        padding-top: 10%;
+    }
+    .img-registro {
+        width: 35%;
+    }
+}
+@media (min-width:700px) and (max-width: 1099px) {
     .portada {
         padding-top: 15%;
+    }  
+    .h1-portada {
+        font-size: 3rem;
+    }  
+    .div-logo {
+        width: 15%;
     }
-    
+    .pag {
+        padding-top: 20%;
+    }  
+    .container {
+        width: 600px;
+    }
+    ul.slider {
+        width: 600px;
+        height: 200px;
+    }
+    ul.slider li img {
+        height: 200px;
+    }
+    .portada-registro {
+        align-items: center;
+    }    
+    .div-reg {
+        padding-top: 15%;
+    }
+    .img-registro {
+        width: 50%;
+    }
+}
+@media (max-width: 699px) {
+    .portada {
+        padding-top: 25%;
+    }  
+    .h1-portada {
+        font-size: 1.7rem;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-login {
+        justify-content: center;
+    }
+    .nav-menu {
+        justify-content: center;
+    }
+    .pag {
+        padding-top: 30%;
+    } 
+    .container {
+        width: 450px;
+    }
+    ul.slider {
+        width: 450px;
+        height: 200px;
+    }
+    ul.slider li img {
+        height: 200px;
+    }
+    .portada-registro {
+        align-items: center;
+    }
+    .div-reg {
+        opacity: 0;
+        width: 0;
+    }
+    .img-registro {
+        width: 70%;
+    }
+    .div-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        
+    }
 }
 @media (min-width: 1450px) and (max-width: 1618px) {
     .header {
         height: 110vh;
-    }    
+    }
 }
-    
+
+

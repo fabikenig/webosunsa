@@ -2,14 +2,15 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 </head>
 <body>
     <header class="header" >
         <nav class="navbar">
             <div class="div-logo">
-                <img class="logo-nav" src="./Images/head_osunsa.png" alt="">
+                <img class="logo-nav" src="./Images/logo-trans.png" alt="">
             </div>
-            <ul class="ul-nav">
+            <ul class="ul-nav nav-menu">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="">Institucional</a>
                     <ul>
@@ -63,9 +64,11 @@
                 <li><a href="">Consulta Afiliación</a></li> -->
                 <li><a href="./novedades.html">Galeria</a></li>
                 <li><a href="./index.html#contacto">Contacto</a></li>
+            </ul>    
+            <ul class="ul-nav nav-login">     
                 <li><a href="./registrarse.html">Registrarse</a></li>
                 <li><a href="./login.html">Login</a></li>
-            </ul>            
+            </ul>           
         </nav>
         <div class="portada">
             <div class="reg reg1">
@@ -76,10 +79,10 @@
             </div>
             <div class="reg">
                 <div class="registro">
-                    <label for="fname">Nombre de usuario</label>
+                    <label class="label-login" for="fname">Nombre de usuario</label>
                     <input class="input" type="text" id="fname" name="firstname" placeholder="usuario">
                     
-                    <label for="fname">Contraseña</label>
+                    <label class="label-login" for="fname">Contraseña</label>
                     <input class="input" type="text" id="fname" name="firstname" placeholder="Contraseña">
             
                     <a class="button button1">Entrar</a>

@@ -476,6 +476,7 @@ ul.slider li:target {
     }
     .portada-registro {
         align-items: center;
+        padding-top: 12%
     }    
     .div-reg {
         padding-top: 15%;
@@ -518,13 +519,14 @@ ul.slider li:target {
     }
     .portada-registro {
         align-items: center;
+        padding-top: 15%
     }
     .div-reg {
         opacity: 0;
         width: 0;
     }
     .img-registro {
-        width: 20%;
+        width: 50%;
     }
     .div-logo {
         display: flex;

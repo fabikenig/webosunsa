@@ -542,4 +542,40 @@ ul.slider li:target {
     }
 }
 
-
+.registro2{
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+ 
+.padre{
+    width: 100%;
+    display: flex;
+   
+    align-items: center;
+    margin: 20px;
+}
+.hijo{
+    width: 300%;
+    height: 200%;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.cdtitulo{
+    text-align: center;
+}
+.cdnombre{
+    text-align: center;
+}
+.fotodirector{
+    text-align: center;
+    width: 100%;
+   
+    object-fit: cover;
+}
+.parrafo{
+    text-align: justify;
+    
+}

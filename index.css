@@ -434,7 +434,7 @@ ul.slider li:target {
 }
 @media (max-width: 639px) {
     .section-contact {
-        height: 320vh;
+        height: 330vh;
     }
     .div-button {
         display: flex;
@@ -506,6 +506,7 @@ ul.slider li:target {
     }
     .navbar {
         flex-direction: column;
+        height: 12vh;
     }
     .nav-login {
         justify-content: center;

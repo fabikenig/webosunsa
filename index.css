@@ -463,9 +463,7 @@ ul.slider li:target {
     .div-reg {
         padding-top: 10%;
     }
-    .img-registro {
-        width: 35%;
-    }
+
 }
 @media (min-width:750px) and (max-width: 1099px) {
     .portada {
@@ -536,7 +534,7 @@ ul.slider li:target {
     }
     .portada-registro {
         align-items: center;
-        padding-top: 25%
+        padding-top: 35%
     }
     .div-reg {
         opacity: 0;
